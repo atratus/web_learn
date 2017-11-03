@@ -7,62 +7,79 @@
 	.but1 {
 			border:2px black;
 			background: #eee;
-			padding: 20px;
+			padding: 10px 20px;
 			border-style: solid;
 			border-radius: 5px;
 			font-size: 20px;
 			color: #ff0000;
+			width:200px;
+			
+	}
+	.arrow {
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		border-left: 5px solid black;
+		border-right: 0px;
+	
+		width: 0px;
+		height: 0px;
+		display: inline-block;
 	}
 		/*span {
 			color: red;
 		}*/
-		.brd{
-			border:6px;
-			border-color: #eee #ccc #555 #aaa;
-			/*background: #fff;*/
-			padding: 10px;
-			border-style: solid;
+	.brd{
+		border:5px;
+		border-color: #eee #ccc #555 #aaa;
+		/*background: #fff;*/
+		padding: 10px 20px;
+		border-style: solid;
 			/*border-radius: 5px;*/
-			font-size: 20px;
-		}
+		font-size: 20px;
+	}
 		.but3 {
 			background-image: url(https://i2.wp.com/cliparts.co/cliparts/8iA/j9X/8iAj9Xbia.png) ;
+			background-position:center;
 			background-size: 100%;
 			background-repeat: no-repeat;
   		    cursor:pointer;
-    		border:1px;
-    		border-style: solid;
+    		border:none;
+			padding:30px;
+  
     		width:200px;
     		height:100px;
-    		padding: 0% ; 
-    		color: red;
+    		color: #00000000;
+		}
+		.but4 {
+  		 	box-shadow:3px 3px 10px black;
+    		border:1px solid blue;
+			padding:10px 20px;
+  		  	border-radius: 30px;
+			background: linear-gradient(cyan, blue);
+			color:white;
 		}
 		/*a: hover*/
 		a {
 			text-decoration: none;
 		}
+		
 	</style>
 	</head>
 	<body>
+		
 		<h1 align=center>Кнопки</h1>
-		<input type="button" name="Button" class="but1" value="BUTTOM">
-
-		<button style="background:#ddd" class="brd" >
-			<p><span style="color: red; <a href="http://www.ngs.ru" target="_blank"> Button </a>
-				
-			</span></p>
-		</button>
-
-		<input type="submit" name="Button3" class="but3" value="BUTTOM">
-
-		<button>
-			<p><span style="">
-			<p><a href="http://www.ngs.ru" target="_blank"> Button </a></p>
-		 	</span></p>
-		</button>
-
-		<p align=center><a href="http://www.ngs.ru" target="_blank">Текст на странице текст </a><i>текст</i> <font color="#ff0000"><b>текст</b></font> <u>текст</u>
-		</p>
-			 
+		<div style="height:60px;">
+			<span class="but1"><a href="">Button </a><div class="arrow"></div></span>
+		</div>
+		<div style="height:60px;">
+			<span class="brd"><a href="http://www.ngs.ru">Button </a></span>
+		</div>
+		<div style="height:60px;">
+			<span><a class="but3" href="http://www.ngs.ru">Button</a></span>
+		</div>
+		<div style="height:60px;">
+			<span><a class="but4" href="http://www.ngs.ru">Button</a></span>
+		</div>
+	
 	</body>
 	</html
